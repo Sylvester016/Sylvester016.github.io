@@ -149,6 +149,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         'consulting.txt': { type: 'file', content: 'Expert advice on digital transformation and tech strategy.' }
                     }
                 },
+                'products': {
+                    type: 'dir',
+                    contents: {
+                        'vester_cloud.txt': { type: 'file', content: 'VesterCloud: Next-gen cloud infrastructure management dashboard.' },
+                        'autoflow_ai.txt': { type: 'file', content: 'AutoFlow AI: Intelligent workflow automation bot reducing manual data entry by 90%.' },
+                        'secure_vault.txt': { type: 'file', content: 'SecureVault: Banking-grade data security platform with real-time threat detection.' }
+                    }
+                },
                 'about': {
                     type: 'dir',
                     contents: {
@@ -159,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'contact': {
                     type: 'dir',
                     contents: {
-                        'email.txt': { type: 'file', content: '016sylveter@gmail.com' },
+                        'email.txt': { type: 'file', content: 'hello@vester.tech' },
                         'socials.txt': { type: 'file', content: 'LinkedIn: /company/vester | Twitter: @vester_tech' }
                     }
                 },
@@ -246,6 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 addToTerminal('- <span class="highlight">cat [file]</span>: Read file content');
                 addToTerminal('- <span class="highlight">about</span>: Learn more about us');
                 addToTerminal('- <span class="highlight">services</span>: View our services');
+                addToTerminal('- <span class="highlight">products</span>: View our products');
                 addToTerminal('- <span class="highlight">contact</span>: Get contact info');
                 addToTerminal('- <span class="highlight">clear</span>: Clear the terminal');
                 addToTerminal('- <span class="highlight">theme</span>: Toggle dark/light mode');
@@ -329,6 +338,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 addToTerminal('4. Tech Consulting');
                 document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
                 break;
+
+            case 'products':
+                addToTerminal('Fetching product catalog...');
+                addToTerminal('1. VesterCloud (SaaS)');
+                addToTerminal('2. AutoFlow AI (Automation)');
+                addToTerminal('3. SecureVault (Enterprise)');
+                document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+                break;
                 
             case 'contact':
                 addToTerminal('Email: hello@vester.tech');
@@ -355,6 +372,43 @@ document.addEventListener('DOMContentLoaded', () => {
                     addToTerminal(`Command not found: ${mainCmd}. Type 'help' for available commands.`);
                 }
         }
+    }
+
+    // --- Contact Form (WhatsApp & Email) ---
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Check which button was clicked
+            const action = e.submitter ? e.submitter.value : 'whatsapp'; // Default to whatsapp if unsure
+
+            if (action === 'email') {
+                // Email Logic
+                const subject = `New Contact Request from ${name}`;
+                const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+                const mailtoLink = `mailto:hello@vester.tech?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                window.location.href = mailtoLink;
+            } else {
+                // WhatsApp Logic
+                const whatsappNumber = '27763381735'; 
+                const text = `*New Contact Request from Vester Portfolio*\n\n*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`;
+                const encodedText = encodeURIComponent(text);
+                
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+                
+                // Open in new tab
+                window.open(whatsappUrl, '_blank');
+            }
+            
+            // Reset form
+            contactForm.reset();
+        });
     }
 
     // Smooth Scrolling for Anchor Links (Optional as CSS scroll-behavior: smooth handles most)
