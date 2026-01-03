@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'contact': {
                     type: 'dir',
                     contents: {
-                        'email.txt': { type: 'file', content: 'hello@vester.tech' },
+                        'email.txt': { type: 'file', content: '016sylveter@gmail.com' },
                         'socials.txt': { type: 'file', content: 'LinkedIn: /company/vester | Twitter: @vester_tech' }
                     }
                 },
