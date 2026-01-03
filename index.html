@@ -112,12 +112,15 @@
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
-                    <form class="contact-form" id="contact-form">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Message" rows="5" required></textarea>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn" name="action" value="whatsapp"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+                        <button type="submit" class="btn btn-outline" name="action" value="email"><i class="fas fa-envelope"></i> Send via Email</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -129,6 +132,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
