@@ -316,7 +316,8 @@ header {
     justify-content: center;
     background: var(--btn-gradient);
     color: var(--white);
-    padding: 12px 28px;
+    /* Desktop sizing: 0.75rem (12px) vertical, 1.75rem (28px) horizontal */
+    padding: 0.75rem 1.75rem; 
     border-radius: var(--btn-radius);
     text-decoration: none;
     font-weight: 600;
@@ -328,8 +329,9 @@ header {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    min-width: 48px;
-    min-height: 48px;
+    /* Desktop optimization: min 120px width, 40px height */
+    min-width: 7.5rem; /* 120px */
+    min-height: 2.5rem; /* 40px */
     font-size: 1rem;
     -webkit-font-smoothing: antialiased;
 }
@@ -588,10 +590,14 @@ section {
     gap: 1.5rem; /* Increased spacing for PC as well */
     flex-wrap: wrap;
     margin-top: 1rem;
+    width: 100%; /* Ensure container fills the form width */
 }
 
-/* Footer */
-footer {
+.form-buttons .btn {
+    flex: 1; /* Allow buttons to grow to fill the available space */
+}
+
+[data-theme="dark"] .btn-outline {
     background-color: var(--secondary-color);
     color: var(--white);
     text-align: center;

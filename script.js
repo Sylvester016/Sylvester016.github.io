@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'contact': {
                     type: 'dir',
                     contents: {
-                        'email.txt': { type: 'file', content: 'hello@vester.tech' },
+                        'email.txt': { type: 'file', content: '016sylvester@gmail.com' },
                         'socials.txt': { type: 'file', content: 'LinkedIn: /company/vester | Twitter: @vester_tech' }
                     }
                 },
@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
                 
             case 'contact':
-                addToTerminal('Email: hello@vester.tech');
+                addToTerminal('Email: 016sylvester@gmail.com');
                 addToTerminal('Twitter: @vester_tech');
                 document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
                 break;
