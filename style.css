@@ -498,6 +498,13 @@ section {
     border-color: var(--primary-color);
 }
 
+.form-buttons {
+    display: flex;
+    gap: 1.5rem; /* Increased spacing for PC as well */
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--secondary-color);
@@ -554,7 +561,7 @@ footer {
         flex-direction: column;
         gap: 1.5rem;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .form-buttons .btn {
