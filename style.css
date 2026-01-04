@@ -6,6 +6,12 @@
     --white: #fff;
     --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+    
+    /* Premium Button Variables */
+    --btn-gradient: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    --btn-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+    --btn-hover-shadow: 0 8px 25px rgba(52, 152, 219, 0.5);
+    --btn-radius: 8px;
 }
 
 [data-theme="dark"] {
@@ -15,6 +21,11 @@
     --bg-color: #1a1a1a;
     --white: #2c2c2c;
     --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    
+    /* Premium Button Variables (Dark Mode) */
+    --btn-gradient: linear-gradient(135deg, #5dade2 0%, #3498db 100%);
+    --btn-shadow: 0 4px 15px rgba(93, 173, 226, 0.3);
+    --btn-hover-shadow: 0 8px 25px rgba(93, 173, 226, 0.4);
 }
 
 * {
