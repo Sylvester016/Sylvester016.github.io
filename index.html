@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UL ASCOMS – University of Limpopo</title>
+  <meta name="description" content="UL ASCOMS – Official student society for Applied Mathematics, Statistics, Computer Sciences, Operational Research, and Mathematics at the University of Limpopo." />
+
+  <!-- Favicon using UL ASCOMS logo -->
+  <link rel="icon" type="image/png" href="ulascomslogo.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons are provided via inline SVG sprite for consistent professional look -->
+
+  <!-- Main Styles -->
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <symbol id="location-dot" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2.5c-3.03 0-5.5 2.47-5.5 5.5 0 3.87 4.34 8.26 5.02 8.94.27.27.69.27.96 0 .68-.68 5.02-5.07 5.02-8.94 0-3.03-2.47-5.5-5.5-5.5Zm0 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
+    </symbol>
+    <symbol id="users" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M8 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm8 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+      <path fill="currentColor" d="M3.75 18a4.25 4.25 0 0 1 8.5 0v.25c0 .69-.56 1.25-1.25 1.25H5c-.69 0-1.25-.56-1.25-1.25Zm8.5 0A4.25 4.25 0 0 1 20 18v.25c0 .69-.56 1.25-1.25 1.25h-6c-.69 0-1.25-.56-1.25-1.25Z"/>
+    </symbol>
+    <symbol id="people-group" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M7 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm10 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm-5 1a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+      <path fill="currentColor" d="M3.5 17.5A3.5 3.5 0 0 1 7 14h2a3.5 3.5 0 0 1 3.5 3.5v.5H3.5Zm8.5.5v-.5A3.5 3.5 0 0 1 15.5 14h2a3.5 3.5 0 0 1 3.5 3.5v.5Z"/>
+    </symbol>
+    <symbol id="hand-holding-dollar" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M11 3.5a3 3 0 0 1 3 3h-1.5a1.5 1.5 0 1 0-3 0c0 .83.67 1.5 1.5 1.5h1a3 3 0 1 1 0 6h-3V13H12a1.5 1.5 0 1 0 0-3h-1a3 3 0 1 1 0-6Z"/>
+      <path fill="currentColor" d="M3 15.75A1.75 1.75 0 0 1 4.75 14h5.5a4.75 4.75 0 0 1 3.36 1.39l2.09 2.11H21a1 1 0 0 1 0 2h-5.78a2.5 2.5 0 0 1-1.77-.73l-1.16-1.15H4.75A1.75 1.75 0 0 1 3 15.75Z"/>
+    </symbol>
+    <symbol id="chalkboard-teacher" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="10" rx="1.5" ry="1.5" fill="currentColor" opacity="0.16"/>
+      <rect x="4" y="5" width="16" height="8" rx="1" ry="1" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="8" cy="16.5" r="2.25" fill="currentColor"/>
+      <path fill="currentColor" d="M4.75 20.5a3.25 3.25 0 0 1 6.5 0v.25H4.75Z"/>
+    </symbol>
+    <symbol id="mug-hot" viewBox="0 0 24 24">
+      <rect x="4" y="7" width="10" height="11" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.6" d="M14 9h2.5a2 2 0 0 1 0 4H14"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M8 3.5c.8.8.8 1.7 0 2.5M11 3.5c.8.8.8 1.7 0 2.5"/>
+    </symbol>
+    <symbol id="certificate" viewBox="0 0 24 24">
+      <circle cx="11" cy="9" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path fill="currentColor" d="M15 13.2 17.2 15l-.7 2.7-2.5-.9-2.5.9-.7-2.7L13 13.2a4.97 4.97 0 0 0 2 0Z"/>
+    </symbol>
+    <symbol id="microchip" viewBox="0 0 24 24">
+      <rect x="6" y="6" width="12" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <rect x="9" y="9" width="6" height="6" rx="1.2" ry="1.2" fill="currentColor"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M12 2v3M16 2v3M8 2v3M12 19v3M16 19v3M8 19v3M2 12h3M2 8h3M2 16h3M19 12h3M19 8h3M19 16h3"/>
+    </symbol>
+    <symbol id="check" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 13.5 9.5 18 19 6"/>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 24 24">
+      <rect x="4" y="4" width="16" height="16" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="17" cy="7" r="1.2" fill="currentColor"/>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M13 4h2.2a1 1 0 0 1 1 1.2l-.4 2.3H13v3h2.4a1 1 0 0 1 .98 1.2l-.6 3H13v5h-3v-5H7v-3h3V7a3 3 0 0 1 3-3Z"/>
+    </symbol>
+    <symbol id="x-twitter" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6 4h3.1l3 4.4L15.9 4H19l-5 7 5.4 9H16l-3.3-5-3.5 5H6.2L11.4 12Z"/>
+    </symbol>
+    <symbol id="volume-xmark" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M4 9v6h3.5L12 19V5L7.5 9H4Z"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M15 9l4 6M19 9l-4 6"/>
+    </symbol>
+    <symbol id="volume-high" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M4 9v6h3.5L12 19V5L7.5 9H4Z"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M15 9.5a3 3 0 0 1 0 5M17.5 7.5a5.5 5.5 0 0 1 0 9"/>
+    </symbol>
+  </svg>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="logo-group">
+        <img src="ulascomslogo.jpg" class="logo-image" alt="UL ASCOMS Society logo" />
+        <div class="logo-text" aria-hidden="true">
+          <span class="logo-title">UL ASCOMS</span>
+          <span class="logo-subtitle">School of Mathematical &amp; Computer Sciences</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#membership">Get Involved</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content fade-in">
+          <p class="eyebrow">University of Limpopo • SMCS • Faculty of Science & Agriculture</p>
+          <h1 id="hero-heading">
+            UL ASCOMS – Empowering Mathematical & Computational Excellence at UL
+          </h1>
+          <p class="hero-tagline">
+            Supporting Students • Driving Academic Success • Preparing for the Future
+          </p>
+          <p class="hero-text">
+            The University of Limpopo Applied Mathematics, Statistics, Computer Sciences, Operational Research, and Mathematics Society is the primary academic representative body for students in the School of Mathematical and Computer Sciences (SMCS).
+          </p>
+          <div class="hero-actions">
+            <a href="#membership" class="btn btn-primary">Become a Member</a>
+            <a href="#activities" class="btn btn-ghost">Explore Our Work</a>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <svg class="icon icon-location" aria-hidden="true"><use href="#location-dot" xlink:href="#location-dot"></use></svg>
+              <span>University of Limpopo • Mankweng-Turfloop Campus • Limpopo</span>
+            </div>
+            <div class="meta-item">
+              <svg class="icon" aria-hidden="true"><use href="#users" xlink:href="#users"></use></svg>
+              <span>Serving undergrad & postgrad students across SMCS and FSA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in" aria-label="UL ASCOMS promotional video">
+          <figure class="hero-video-frame">
+            <video
+              id="heroVideo"
+              class="hero-video-element"
+              src="picsandvides/WhatsApp Video 2026-02-08 at 13.49.12.mp4"
+              preload="metadata"
+              playsinline
+              muted
+            ></video>
+            <button id="muteBtn" class="mute-btn" type="button" aria-label="Toggle sound">
+              <svg id="muteIcon" class="icon" aria-hidden="true">
+                <use href="#volume-xmark" xlink:href="#volume-xmark"></use>
+              </svg>
+            </button>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-alt" id="about" aria-labelledby="about-heading">
+      <div class="container section-inner fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">About UL ASCOMS</p>
+          <h2 id="about-heading">Academic Representation for Mathematical & Computer Sciences</h2>
+          <p class="section-intro">
+            UL ASCOMS is the official student society representing students in Applied Mathematics, Statistics, Computer Sciences, Operational Research, and Mathematics at the University of Limpopo. We exist to enhance student life, academic outcomes, welfare, and career readiness.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>Our Mission</h3>
+            <p>
+              To serve as the primary academic representative body for students in the School of Mathematical and Computer Sciences, advocating for quality teaching, inclusive support, and equitable access to opportunities across the Faculty of Science and Agriculture.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Our Vision</h3>
+            <p>
+              A community of UL students who are confident, industry-ready problem solvers, using mathematics and computing to build sustainable solutions for Africa and beyond.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h3>Our Role</h3>
+            <p>
+              We bridge students, faculty, and institutional structures such as the SRC to promote academic excellence, transparent governance, and a culture of peer-led learning within SMCS.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section" id="activities" aria-labelledby="activities-heading">
+      <div class="container section-inner fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">Our Activities</p>
+          <h2 id="activities-heading">High-Impact Academic & Career Initiatives</h2>
+          <p class="section-intro">
+            We design and deliver structured programmes that respond directly to the academic and financial realities faced by UL students, especially in high-risk mathematical and computing modules.
+          </p>
+        </header>
+
+        <div class="activities-grid">
+          <!-- Joint Opening Function -->
+          <article class="card">
+            <div class="card-icon">
+              <svg class="icon" aria-hidden="true"><use href="#people-group" xlink:href="#people-group"></use></svg>
+            </div>
+            <h3>Joint Opening Function</h3>
+            <p class="card-tagline">Collaborative welcome for SMCS & FSA students</p>
+            <p>
+              In partnership with PMSSS and MLSSA, UL ASCOMS co-hosted a joint opening function, introducing societies, academic support structures, and expectations to first-year and returning students, with dedicated budgets for student-focused catering.
+            </p>
+            <ul class="card-list">
+              <li>Early exposure to academic support and mentoring</li>
+            </ul>
+          </article>
+
+          <!-- Bursary Drive -->
+          <article class="card">
+            <div class="card-icon">
+              <svg class="icon" aria-hidden="true"><use href="#hand-holding-dollar" xlink:href="#hand-holding-dollar"></use></svg>
+            </div>
+            <h3>Faculty Bursary Drive</h3>
+            <p class="card-tagline">5-week support for funding applications</p>
+            <p>
+              UL ASCOMS led a faculty-wide bursary drive to assist students with NSFAS and external bursary applications, focusing on accurate documentation, motivation letters, and deadline management.
+            </p>
+            <ul class="card-list">
+              <li>5 weeks of structured support across FSA</li>
+              <li>Improved access to financial aid opportunities</li>
+            </ul>
+          </article>
+
+          <!-- Extra Classes -->
+          <article class="card">
+            <div class="card-icon">
+              <svg class="icon" aria-hidden="true"><use href="#chalkboard-teacher" xlink:href="#chalkboard-teacher"></use></svg>
+            </div>
+            <h3>Extra Classes & Tutorials</h3>
+            <p class="card-tagline">Free academic support for high‑risk modules</p>
+            <p>
+              We coordinate free extra classes, revision sessions, and tutorial support for modules such as SMTH000/011/012, SSTA021/022, SCOA021/022/031/032, and SMTA021/022/031, open to all qualifying students.
+            </p>
+            <ul class="card-list">
+              <li>Student-friendly explanations and problem walkthroughs</li>
+              <li>Peer-led and lecturer-supported sessions</li>
+            </ul>
+          </article>
+
+          <!-- Peer Learning & Cross-Nights -->
+          <article class="card">
+            <div class="card-icon">
+              <svg class="icon" aria-hidden="true"><use href="#mug-hot" xlink:href="#mug-hot"></use></svg>
+            </div>
+            <h3>Peer Learning & Cross-Nights</h3>
+            <p class="card-tagline">Safe, focused spaces for deep study</p>
+            <p>
+              We promote structured peer-led learning and host intensive “cross-night” study sessions with refreshments funded by the executive, enabling students to revise together in a supportive environment.
+            </p>
+            <ul class="card-list">
+              <li>Executive-funded coffee and snacks</li>
+              <li>Guided revision with senior students</li>
+            </ul>
+          </article>
+
+          <!-- FNB Academy -->
+          <article class="card">
+            <div class="card-icon">
+              <svg class="icon" aria-hidden="true"><use href="#certificate" xlink:href="#certificate"></use></svg>
+            </div>
+            <h3>FNB Academy Participation</h3>
+            <p class="card-tagline">Professional certificates for employability</p>
+            <p>
+              UL ASCOMS members participated in the FNB Academy, gaining short professional certifications that demonstrate workplace skills and enhance graduate employability in the financial and technology sectors.
+            </p>
+            <ul class="card-list">
+              <li>Practical exposure to industry expectations</li>
+              <li>CV-strengthening certificates earned by students</li>
+            </ul>
+          </article>
+
+          <!-- AI Seminar -->
+          <article class="card">
+            <div class="card-icon">
+              <svg class="icon" aria-hidden="true"><use href="#microchip" xlink:href="#microchip"></use></svg>
+            </div>
+            <h3>AI & 4IR Seminar</h3>
+            <p class="card-tagline">Future-focused perspectives on AI in South Africa</p>
+            <p>
+              In collaboration with PAISA Technology, we hosted an AI seminar exploring artificial intelligence, data, and Fourth Industrial Revolution careers, tailored for UL students in mathematics and computing.
+            </p>
+            <ul class="card-list">
+              <li>Insights into AI, data, and tech roles</li>
+              <li>Discussion of ethical and African-context issues</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section section-alt" id="impact" aria-labelledby="impact-heading">
+      <div class="container section-inner fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">Impact & Outcomes</p>
+          <h2 id="impact-heading">Building Confidence, Access, and Employability</h2>
+          <p class="section-intro">
+            Our work is grounded in measurable outcomes: better academic performance, higher rates of bursary applications, and stronger career readiness among UL students in SMCS and across FSA.
+          </p>
+        </header>
+
+        <div class="impact-grid">
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">5+</span>
+              <span class="impact-label">high‑risk modules supported</span>
+            </div>
+            <p>
+              From foundational mathematics to advanced computing, our extra classes and cross-night sessions target modules with historically high failure rates.
+            </p>
+          </article>
+
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">5 weeks</span>
+              <span class="impact-label">continuous bursary support</span>
+            </div>
+            <p>
+              Faculty-wide bursary drives help students navigate complex funding processes and meet strict deadlines with confidence.
+            </p>
+          </article>
+
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">100+</span>
+              <span class="impact-label">students engaged annually</span>
+            </div>
+            <p>
+              Our programmes attract students from diverse SMCS disciplines, creating a collaborative learning culture across the faculty.
+            </p>
+          </article>
+
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">Certificates</span>
+              <span class="impact-label">earned through FNB Academy</span>
+            </div>
+            <p>
+              Participation in external academies and seminars ensures our members graduate with both academic depth and industry-relevant skills.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="section" id="partners" aria-labelledby="partners-heading">
+      <div class="container section-inner fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">Partnerships</p>
+          <h2 id="partners-heading">Collaborative, Accountable, and SRC-Aligned</h2>
+          <p class="section-intro">
+            UL ASCOMS operates transparently and in alignment with SRC registration requirements, maintaining accountable relationships with faculty structures and external partners.
+          </p>
+        </header>
+
+        <div class="partners-grid">
+          <article class="partner-card">
+            <h3>On-Campus Societies</h3>
+            <ul>
+              <li>PMSSS – Physical & Mathematical Sciences Students’ Society</li>
+              <li>MLSSA – Mathematical & Life Sciences Students’ Association</li>
+              <li>SRC – Student Representative Council structures</li>
+            </ul>
+          </article>
+
+          <article class="partner-card">
+            <h3>Industry & Programmes</h3>
+            <ul>
+              <li>FNB Academy – professional skills and employability</li>
+              <li>PAISA Technology – AI and 4IR seminar collaboration</li>
+              <li>Other academic and industry partners (growing network)</li>
+            </ul>
+          </article>
+
+          <article class="partner-card">
+            <h3>Our Commitment</h3>
+            <ul>
+              <li>Transparent use of funds and sponsorships</li>
+              <li>Inclusive programming across SMCS disciplines</li>
+              <li>Alignment with UL strategic goals and “Finding Solutions for Africa”</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="media" aria-labelledby="media-heading">
+      <div class="container section-inner fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">Media</p>
+          <h2 id="media-heading">Gallery: Student Life & Activities</h2>
+          <p class="section-intro">
+            A glimpse into UL ASCOMS events, study sessions, and academic support initiatives across the University of Limpopo.
+          </p>
+        </header>
+
+        <div class="media-layout">
+          
+
+          <div class="media-gallery">
+            <h3>Videos</h3>
+            <p class="media-note">Short clips highlighting UL ASCOMS activities and student support in action.</p>
+            <div class="media-video-grid">
+              <figure class="media-video">
+                <video
+                  src="picsandvides/WhatsApp Video 2026-02-08 at 13.47.55.mp4"
+                  controls
+                  preload="metadata"
+                  playsinline
+                  muted
+                ></video>
+                <figcaption>UL ASCOMS activity clip from 8 February 2026</figcaption>
+              </figure>
+              <figure class="media-video">
+                <video
+                  src="picsandvides/WhatsApp Video 2026-02-08 at 13.47.55 (1).mp4"
+                  controls
+                  preload="metadata"
+                  playsinline
+                  muted
+                ></video>
+                <figcaption>Additional highlight from the same engagement</figcaption>
+              </figure>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership / Get Involved Section -->
+    <section class="section section-alt" id="membership" aria-labelledby="membership-heading">
+      <div class="container section-inner membership-layout fade-in">
+        <div class="membership-content">
+          <header class="section-header">
+            <p class="section-eyebrow">Get Involved</p>
+            <h2 id="membership-heading">Become a Member of UL ASCOMS</h2>
+            <p class="section-intro">
+              Whether you are an undergraduate or postgraduate student in SMCS or a related field within the Faculty of Science and Agriculture, there is a place for you in UL ASCOMS.
+            </p>
+          </header>
+
+          <div class="membership-details">
+            <h3>Who Can Join?</h3>
+            <p>
+              Membership is open to students registered in Applied Mathematics, Statistics, Computer Sciences, Operational Research, Mathematics, and related programmes within SMCS and FSA.
+            </p>
+
+            <h3>Why Join?</h3>
+            <ul>
+              <li>Access to extra classes, cross-night sessions, and study groups</li>
+              <li>Information on bursaries, internships, and graduate programmes</li>
+              <li>Opportunities to lead projects and represent your peers</li>
+            </ul>
+
+            <h3>Membership & SRC Registration</h3>
+            <p>
+              To maintain SRC-recognised status, a minimum of 100 registered affiliates is required. By joining UL ASCOMS, you help secure a strong, accountable student voice for SMCS at UL.
+            </p>
+          </div>
+
+          <div class="membership-cta">
+            <a href="#contact" class="btn btn-primary">Express Interest</a>
+            <p class="helper-text">
+              Planning ahead for 2026 SRC registration? Join now and stay informed about key dates and documentation.
+            </p>
+          </div>
+        </div>
+
+        <aside class="membership-aside" aria-label="Membership summary">
+          <div class="aside-card">
+            <h3>Quick Membership Snapshot</h3>
+            <ul class="aside-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#check" xlink:href="#check"></use></svg> No joining fee for standard membership</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#check" xlink:href="#check"></use></svg> Open to SMCS & FSA students</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#check" xlink:href="#check"></use></svg> Opportunities to volunteer and mentor</li>
+            </ul>
+            <p class="aside-note">
+              Formal membership forms and updated details will be communicated through official UL channels and UL ASCOMS social media platforms.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container section-inner contact-layout fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">Contact</p>
+          <h2 id="contact-heading">Connect with UL ASCOMS</h2>
+          <p class="section-intro">
+            Reach out to the UL ASCOMS executive for partnerships, membership queries, or academic support information.
+          </p>
+        </header>
+
+        <div class="contact-content">
+          <div class="contact-details">
+            <h3>Primary Contact</h3>
+            <p>
+              Email:
+              <a href="mailto:ulascoms@ul.ac.za">ulascoms@ul.ac.za</a>
+            </p>
+            <p>
+              Campus: University of Limpopo, Mankweng-Turfloop Campus, Limpopo Province, South Africa.
+            </p>
+
+            <h3>Student Governance Links</h3>
+            <p class="contact-note">
+              For formal recognition and governance matters, UL ASCOMS engages through the relevant SRC and faculty structures in line with UL policies.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Stay Connected</h3>
+            <p>Follow UL ASCOMS on social platforms for announcements and event updates.</p>
+            <div class="social-links" aria-label="UL ASCOMS social media">
+              <a href="#" aria-label="UL ASCOMS on Instagram">
+                <svg class="icon" aria-hidden="true"><use href="#instagram" xlink:href="#instagram"></use></svg>
+                <span>@UL_ASCOMS</span>
+              </a>
+              <a href="#" aria-label="UL ASCOMS on Facebook">
+                <svg class="icon" aria-hidden="true"><use href="#facebook" xlink:href="#facebook"></use></svg>
+                <span>/ULASCOMS</span>
+              </a>
+              <a href="#" aria-label="UL ASCOMS on X (Twitter)">
+                <svg class="icon" aria-hidden="true"><use href="#x-twitter" xlink:href="#x-twitter"></use></svg>
+                <span>@UL_ASCOMS</span>
+              </a>
+            </div>
+
+            <p class="helper-text">
+              Social media handles are placeholders and can be updated once official accounts are confirmed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="ulascomslogo.jpg" class="footer-logo-image" alt="UL ASCOMS Society logo" />
+          <div>
+            <p class="footer-title">UL ASCOMS</p>
+            <p class="footer-subtitle">University of Limpopo • School of Mathematical &amp; Computer Sciences</p>
+          </div>
+        </div>
+        <p class="footer-motto">“Finding Solutions for Africa”</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#top">Back to top</a>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#impact">Impact</a>
+        <a href="#membership">Membership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <p class="footer-meta">
+        © 2026 UL ASCOMS • University of Limpopo. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
