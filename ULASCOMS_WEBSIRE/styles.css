@@ -1069,3 +1069,7 @@ p {
 .mute-btn:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+.hero-video-frame1{
+   border-radius: 10px;
+}
