@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UL ASCOMS – Membership</title>
+  <link rel="icon" type="image/png" href="ulascomslogo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored === "dark" ? "dark" : "light";
+        if (theme === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="logo-group">
+        <img src="ulascomslogo.jpg" class="logo-image" alt="UL ASCOMS Society logo">
+        <div class="logo-text" aria-hidden="true">
+          <span class="logo-title">UL ASCOMS</span>
+          <span class="logo-subtitle">School of Mathematical &amp; Computer Sciences</span>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="membership.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Switch to light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="section section-alt" aria-labelledby="membership-heading">
+      <div class="container section-inner membership-layout fade-in">
+        <div class="membership-content">
+          <header class="section-header">
+            <p class="section-eyebrow">Get Involved</p>
+            <h2 id="membership-heading">Become a Member of UL ASCOMS</h2>
+            <p class="section-intro">
+              Whether you are an undergraduate or postgraduate student in SMCS or a related field within the Faculty of Science and Agriculture, there is a place for you in UL ASCOMS.
+            </p>
+          </header>
+          <div class="membership-details">
+            <h3>Who Can Join?</h3>
+            <p>
+              Membership is open to students registered in Applied Mathematics, Statistics, Computer Sciences, Operational Research, Mathematics, and related programmes within SMCS and FSA.
+            </p>
+            <h3>Why Join?</h3>
+            <ul>
+              <li>Access to extra classes, cross-night sessions, and study groups</li>
+              <li>Information on bursaries, internships, and graduate programmes</li>
+              <li>Opportunities to lead projects and represent your peers</li>
+            </ul>
+            <h3>Membership &amp; SRC Registration</h3>
+            <p>
+              To maintain SRC-recognised status, a minimum of 100 registered affiliates is required. By joining UL ASCOMS, you help secure a strong, accountable student voice for SMCS at UL.
+            </p>
+          </div>
+          <div class="membership-cta">
+            <a href="contact.html" class="btn btn-primary">Express Interest</a>
+            <p class="helper-text">
+              Planning ahead for 2026 SRC registration? Join now and stay informed about key dates and documentation.
+            </p>
+          </div>
+        </div>
+        <aside class="membership-aside" aria-label="Membership summary">
+          <div class="aside-card">
+            <h3>Quick Membership Snapshot</h3>
+            <ul class="aside-list">
+              <li><i class="fa-solid fa-check icon" aria-hidden="true"></i> Open to SMCS &amp; FSA students</li>
+              <li><i class="fa-solid fa-check icon" aria-hidden="true"></i> Opportunities to volunteer and mentor</li>
+            </ul>
+            <p class="aside-note">
+              Formal membership forms and updated details will be communicated through official UL channels and UL ASCOMS social media platforms.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="ulascomslogo.jpg" class="footer-logo-image" alt="UL ASCOMS Society logo">
+          <div>
+            <p class="footer-title">UL ASCOMS</p>
+            <p class="footer-subtitle">University of Limpopo • School of Mathematical &amp; Computer Sciences</p>
+          </div>
+        </div>
+        <p class="footer-motto">“Finding Solutions for Africa”</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#top">Back to top</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="impact.html">Impact</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-meta">© 2026 UL ASCOMS • University of Limpopo. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

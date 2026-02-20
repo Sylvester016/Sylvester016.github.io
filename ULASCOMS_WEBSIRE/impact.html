@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UL ASCOMS – Impact</title>
+  <link rel="icon" type="image/png" href="ulascomslogo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored === "dark" ? "dark" : "light";
+        if (theme === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="logo-group">
+        <img src="ulascomslogo.jpg" class="logo-image" alt="UL ASCOMS Society logo">
+        <div class="logo-text" aria-hidden="true">
+          <span class="logo-title">UL ASCOMS</span>
+          <span class="logo-subtitle">School of Mathematical &amp; Computer Sciences</span>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="membership.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Switch to light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="section section-alt" aria-labelledby="impact-heading">
+      <div class="container section-inner fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">Impact &amp; Outcomes</p>
+          <h2 id="impact-heading">Building Confidence, Access, and Employability</h2>
+          <p class="section-intro">
+            Our work is grounded in measurable outcomes: better academic performance, higher rates of bursary applications, and stronger career readiness among UL students in SMCS and across FSA.
+          </p>
+        </header>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">5+</span>
+              <span class="impact-label">high‑risk modules supported</span>
+            </div>
+            <p>
+              From foundational mathematics to advanced computing, our extra classes and cross-night sessions target modules with historically high failure rates.
+            </p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">5 weeks</span>
+              <span class="impact-label">continuous bursary support</span>
+            </div>
+            <p>
+              Faculty-wide bursary drives help students navigate complex funding processes and meet strict deadlines with confidence.
+            </p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">100+</span>
+              <span class="impact-label">students engaged annually</span>
+            </div>
+            <p>
+              Our programmes attract students from diverse SMCS disciplines, creating a collaborative learning culture across the faculty.
+            </p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-value">
+              <span class="impact-number">Certificates</span>
+              <span class="impact-label">earned through FNB Academy</span>
+            </div>
+            <p>
+              Participation in external academies and seminars ensures our members graduate with both academic depth and industry-relevant skills.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="ulascomslogo.jpg" class="footer-logo-image" alt="UL ASCOMS Society logo">
+          <div>
+            <p class="footer-title">UL ASCOMS</p>
+            <p class="footer-subtitle">University of Limpopo • School of Mathematical &amp; Computer Sciences</p>
+          </div>
+        </div>
+        <p class="footer-motto">“Finding Solutions for Africa”</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#top">Back to top</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="impact.html">Impact</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-meta">© 2026 UL ASCOMS • University of Limpopo. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UL ASCOMS – Activities</title>
+  <link rel="icon" type="image/png" href="ulascomslogo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored === "dark" ? "dark" : "light";
+        if (theme === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <div class="logo-group">
+        <img src="ulascomslogo.jpg" class="logo-image" alt="UL ASCOMS Society logo">
+        <div class="logo-text" aria-hidden="true">
+          <span class="logo-title">UL ASCOMS</span>
+          <span class="logo-subtitle">School of Mathematical &amp; Computer Sciences</span>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="membership.html">Get Involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Switch to light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="section" aria-labelledby="activities-heading">
+      <div class="container section-inner fade-in">
+        <header class="section-header">
+          <p class="section-eyebrow">Our Activities</p>
+          <h2 id="activities-heading">High-Impact Academic &amp; Career Initiatives</h2>
+          <p class="section-intro">
+            We design and deliver structured programmes that respond directly to the academic and financial realities faced by UL students, especially in high-risk mathematical and computing modules.
+          </p>
+        </header>
+        <div class="activities-grid">
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
+            <h3>Joint Opening Function</h3>
+            <p class="card-tagline">Collaborative welcome for SMCS &amp; FSA students</p>
+            <p>
+              In partnership with PMSSS and MLSSA, UL ASCOMS co-hosted a joint opening function, introducing societies, academic support structures, and expectations to first-year and returning students, with dedicated budgets for student-focused catering.
+            </p>
+            <ul class="card-list">
+              <li>Early exposure to academic support and mentoring</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i></div>
+            <h3>Faculty Bursary Drive</h3>
+            <p class="card-tagline">5-week support for funding applications</p>
+            <p>
+              UL ASCOMS led a faculty-wide bursary drive to assist students with NSFAS and external bursary applications, focusing on accurate documentation, motivation letters, and deadline management.
+            </p>
+            <ul class="card-list">
+              <li>5 weeks of structured support across FSA</li>
+              <li>Improved access to financial aid opportunities</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></div>
+            <h3>Extra Classes &amp; Tutorials</h3>
+            <p class="card-tagline">Free academic support for high‑risk modules</p>
+            <p>
+              We coordinate free extra classes, revision sessions, and tutorial support for modules such as SMTH000/011/012, SSTA021/022, SCOA021/022/031/032, and SMTA021/022/031, open to all qualifying students.
+            </p>
+            <ul class="card-list">
+              <li>Student-friendly explanations and problem walkthroughs</li>
+              <li>Peer-led and lecturer-supported sessions</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></div>
+            <h3>Peer Learning &amp; Cross-Nights</h3>
+            <p class="card-tagline">Safe, focused spaces for deep study</p>
+            <p>
+              We promote structured peer-led learning and host intensive cross-night study sessions with refreshments funded by the executive, enabling students to revise together in a supportive environment.
+            </p>
+            <ul class="card-list">
+              <li>Executive-funded coffee and snacks</li>
+              <li>Guided revision with senior students</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+            <h3>FNB Academy Participation</h3>
+            <p class="card-tagline">Professional certificates for employability</p>
+            <p>
+              UL ASCOMS members participated in the FNB Academy, gaining short professional certifications that demonstrate workplace skills and enhance graduate employability in the financial and technology sectors.
+            </p>
+            <ul class="card-list">
+              <li>Practical exposure to industry expectations</li>
+              <li>CV-strengthening certificates earned by students</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+            <h3>AI &amp; 4IR Seminar</h3>
+            <p class="card-tagline">Future-focused perspectives on AI in South Africa</p>
+            <p>
+              In collaboration with PAISA Technology, we hosted an AI seminar exploring artificial intelligence, data, and Fourth Industrial Revolution careers, tailored for UL students in mathematics and computing.
+            </p>
+            <ul class="card-list">
+              <li>Insights into AI, data, and tech roles</li>
+              <li>Discussion of ethical and African-context issues</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="ulascomslogo.jpg" class="footer-logo-image" alt="UL ASCOMS Society logo">
+          <div>
+            <p class="footer-title">UL ASCOMS</p>
+            <p class="footer-subtitle">University of Limpopo • School of Mathematical &amp; Computer Sciences</p>
+          </div>
+        </div>
+        <p class="footer-motto">“Finding Solutions for Africa”</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#top">Back to top</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities</a>
+        <a href="impact.html">Impact</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-meta">© 2026 UL ASCOMS • University of Limpopo. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
